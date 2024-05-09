@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bg"></div>
+    <div id="mainwrapper">
+        <div id="wrapper" >
+            <div id="form">
+                <center><h1>Add new task!</h1></center>
+                <label for="newnotetext">Write what you need to do:</label>
+                <br>
+                <textarea rows="5" name="" placeholder="Type your task here..." id="newnotetext"></textarea>
+                <br>
+                <center><button id="addbtn">Submit</button></center>
+            </div>
+        </div>
+        <ul id="listnotes">
+            <p id="notestats">
+                All tasks count: <span id="allcount">0</span><br>
+                Completed tasks count: <span id="donecount">0</span><br>
+                Not completed tasks count: <span id="notdonecount">0</span><br>
+                <button id="deletenotes" sure="0">Clear all tasks</button>
+            </p>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
